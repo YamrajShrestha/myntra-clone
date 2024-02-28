@@ -20,7 +20,7 @@ const BagItem = ({ item }) => {
           <div className="return-period">
             <span className="return-period-days">
               {item.return_period} days
-            </span>{" "}
+            </span>
             return available
           </div>
           <div className="delivery-details">
@@ -30,7 +30,7 @@ const BagItem = ({ item }) => {
         </div>
         <div
           className="remove-from-cart"
-          onclick={() => console.log("Item removed from cart.")}
+          onClick={() => console.log("Item removed from cart.")}
         >
           X
         </div>
