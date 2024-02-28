@@ -4,13 +4,14 @@ import { useSelector } from "react-redux";
 
 const Home = () => {
   const items = useSelector((store) => store.items);
-  console.log(items);
 
   return (
     <>
       <main>
         <div className="items-container">
-          <HomeItem item={items[0]} />
+          {items.map((item, index) => (
+            <HomeItem item={item} key={index} />
+          ))}
         </div>
       </main>
     </>
